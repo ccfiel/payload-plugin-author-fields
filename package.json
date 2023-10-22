@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boomworks/payload-plugin-author-fields.git"
+    "url": "git+https://github.com/ccfiel/payload-plugin-author-fields.git"
   },
   "keywords": [
     "payload-plugin"

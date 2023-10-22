@@ -135,7 +135,7 @@ const createField = ({
   } else {
     isEditable = editable as boolean;
   }
-
+  let pathName = typeof window === 'undefined' ? undefined : window.location.pathname
   return {
     name: name,
     label: fieldLabel,
@@ -157,7 +157,7 @@ const createField = ({
           ? undefined
           : (props: any) => getDisplayOnlyField({ ...props, pluginConfig }),
       },
-      condition: () => window?.location.pathname !== '/admin/create-first-user',
+      condition: () => pathName !== '/admin/create-first-user',
     },
     access: {
       read: pluginConfig.fieldAccess,
